@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/login_mobile.css" media="screen and (max-width: 768px)">
+    <link rel="stylesheet" href="estilos/login_tela_normal.css" media="screen and (min-width: 769px)">
+    <title>Login</title>
+</head>
+<body>
+    <div id="container">
+
+        <div id="formulario">
+            <h1>Bem-vindo</h1>
+            <p>Faça login para continuar</p>
+            <form action="cadastro.php" method="post">
+                <input type="email" name="email" id="email" placeholder="E-mail" required>
+                <input type="password" name="senha" id="senha" placeholder="Senha" required>
+                <div id="continuar_esquecer">
+                    <div>
+                        <input type="checkbox" name="continue_conectado" id="continue_conectado">
+                        <label for="continue_conectado">Continue conectado</label>
+                    </div>
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+                <input type="submit" value="Entrar">
+                <p id="nao_possui_conta">Não possui uma conta? <a href="#">Cadastre-se</a> </p>
+            </form>
+        </div>
+
+        <div id="arte">
+        
+        </div>
+
+    </div>
+</body>
+</html>
