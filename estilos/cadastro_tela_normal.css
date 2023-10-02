@@ -1,0 +1,146 @@
+/* ---------- GLOBAL --------- */
+
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor1: #00010D;
+    --cor2: #010326;
+    --cor3: #011140;
+    --cor4: #0367A6;
+    --cor5: #A7D5F2;
+}
+
+a{
+    text-decoration: none;
+    color: #A7D5F2;
+}
+
+
+/* ---------- BODY --------- */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- CONTAINER --------- */
+
+div#container{
+    width: 90%;
+    min-width: 720px;
+    max-width: 1400px;
+
+    height: 70%;
+
+    background-color: #011140;
+
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+}
+
+/* ---------- IMAGEM (DIREITA) --------- */
+
+#arte{
+    background-image: url(../imagens/calendario2.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+}
+
+/* ---------- TITULO E PARÁGRAFO --------- */
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5em;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #A7D5F2 ;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: white;
+    font-weight: 700;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px #A7D5F2 ;
+}
+
+/* ---------- FORMULARIO --------- */
+
+/* ---------- FORMULARIO (ESQUERDA) --------- */
+
+#formulario{
+    background-color: #011140;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 58px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+
+input[type="text"]{
+    width: 90%;
+    height: 30px;
+    max-width: 480px;
+    padding: 2px;
+    margin-bottom: 3px;
+}
+
+input[type="email"]{
+    width: 90%;
+    height: 30px;
+    max-width: 480px;
+    padding: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+input[type="password"]{
+    width: 90%;
+    height: 30px;
+    max-width: 480px;
+    padding: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+input[type="submit"]{
+    width: 90%;
+    height: 40px;
+    max-width: 480px;
+    margin-top: 3px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#nao_possui_conta{
+    width: 90%;
+    max-width: 480px;
+    height: 40px;
+}
+

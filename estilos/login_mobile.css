@@ -1,0 +1,130 @@
+/* ---------- GLOBAL --------- */
+
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --cor1: #00010D;
+    --cor2: #010326;
+    --cor3: #011140;
+    --cor4: #0367A6;
+    --cor5: #A7D5F2;
+}
+
+a{
+    text-decoration: none;
+    color: #A7D5F2;
+}
+
+/* ---------- BODY --------- */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ---------- CONTAINER --------- */
+
+div#container{
+    width: 100%;
+    height: 100%;
+    background-color: #011140;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: center;
+}
+
+/* ---------- TÍTULO E PARÁGRAFO --------- */
+
+h1{
+    font-size: 2.5em;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px #A7D5F2 ;
+}
+
+p{
+    font-size: 1.2em;
+    color: white;
+    font-weight: 700;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px #A7D5F2 ;
+}
+
+/* ---------- FORMULÁRIO --------- */
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+input[type="email"]{
+    width: 90%;
+    height: 35px;
+    max-width: 480px;
+    padding: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+input[type="password"]{
+    width: 90%;
+    height: 35px;
+    max-width: 480px;
+    padding: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+#continuar_esquecer{
+    width: 90%;
+    height: 40px;
+    max-width: 480px;
+    padding: 2px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+div#continuar_esquecer > div{
+    margin-right: 12px;
+}
+
+input[type="submit"]{
+    width: 90%;
+    height: 45px;
+    max-width: 480px;
+    margin-top: 3px;
+    background-color: darkgreen;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+#nao_possui_conta{
+    width: 90%;
+    max-width: 480px;
+    height: 40px;
+}
