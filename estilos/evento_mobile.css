@@ -8,16 +8,16 @@
 }
 
 :root{
-    --cor1: #00010D;
-    --cor2: #010326;
-    --cor3: #011140;
-    --cor4: #0367A6;
-    --cor5: #A7D5F2;
+    --cor1: #FBFACE;
+    --cor2: #F05544;
+    --cor3: #B4B5B6;
+    --cor4: #554840;
 }
 
 body{
     width: 100vw;
     height: 100vh;
+    background-color: var(--cor3);
 
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@ body{
     height: auto;
     width: 100%;
 
-    background-color: var(--cor3);
+    background-color: var(--cor4);
 
     display: flex;
     flex-wrap: wrap;
@@ -55,7 +55,7 @@ body{
 #lembrete > h1{
     text-align: center;
     font-size: 1.7em;
-    color: var(--cor5);
+    color: var(--cor1);
     margin-bottom: 5px;
 }
 
@@ -93,7 +93,7 @@ body{
     height: auto;
     width: 100%;
 
-    background-color: var(--cor4);
+    background-color: var(--cor1);
 
     display: flex;
     flex-wrap: wrap;

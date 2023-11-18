@@ -9,16 +9,15 @@
 }
 
 :root{
-    --cor1: #00010D;
-    --cor2: #010326;
-    --cor3: #011140;
-    --cor4: #0367A6;
-    --cor5: #A7D5F2;
+    --cor1: #FBFACE;
+    --cor2: #F05544;
+    --cor3: #B4B5B6;
+    --cor4: #554840;
 }
 
 a{
     text-decoration: none;
-    color: #A7D5F2;
+    color: var(--cor2);
 }
 
 
@@ -41,7 +40,7 @@ div#container{
 
     height: 70%;
 
-    background-color: #011140;
+    background-color: var(--cor1);
 
     display: flex;
     flex-direction: row;
@@ -52,8 +51,9 @@ div#container{
 /* ---------- IMAGEM (DIREITA) --------- */
 
 #arte{
-    background-image: url(../imagens/calendario2.jpg);
-    background-size: cover;
+    background-image: url(../imagens/calendario4.png);
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
     width: 50%;
 }
@@ -62,20 +62,20 @@ div#container{
 
 h1{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.5em;
-    color: white;
-    font-weight: 700;
+    font-size: 2.8em;
+    color: var(--cor4);
+    font-weight: 500;
     margin-bottom: 10px;
-    text-shadow: 1px 1px 2px #A7D5F2 ;
+    text-shadow: 1px 1px 1px var(--cor4) ;
 }
 
 p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.2em;
-    color: white;
-    font-weight: 700;
+    font-size: 1.4em;
+    color: var(--cor4);
+    font-weight: 500;
     margin-top: 10px;
-    text-shadow: 1px 1px 3px #A7D5F2 ;
+    text-shadow: 1px 1px 1px var(--cor4) ;
 }
 
 /* ---------- FORMULARIO --------- */
@@ -83,7 +83,7 @@ p{
 /* ---------- FORMULARIO (ESQUERDA) --------- */
 
 #formulario{
-    background-color: #011140;
+    background-color: var(--cor1);
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -107,6 +107,7 @@ input[type="email"]{
     padding: 2px;
     margin-top: 3px;
     margin-bottom: 3px;
+    border-radius: 8px;
 }
 
 input[type="password"]{
@@ -116,6 +117,7 @@ input[type="password"]{
     padding: 2px;
     margin-top: 3px;
     margin-bottom: 3px;
+    border-radius: 8px;
 }
 
 #continuar_esquecer{
@@ -130,7 +132,7 @@ input[type="password"]{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    color: white;
+    color: var(--cor4);
 }
 
 div#continuar_esquecer > div{
@@ -146,6 +148,7 @@ input[type="submit"]{
     color: white;
     font-size: 1.3em;
     font-weight: 700;
+    border-radius: 8px;
 }
 
 #nao_possui_conta{
